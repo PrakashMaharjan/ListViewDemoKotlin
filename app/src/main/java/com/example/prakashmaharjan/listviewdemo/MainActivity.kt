@@ -1,16 +1,17 @@
 package com.example.prakashmaharjan.listviewdemo
 
-import android.content.Context
-import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ListView
+//import com.example.prakashmaharjan.listviewdemo.R
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.ListView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.row_main.view.*
+
 import java.text.FieldPosition
 
 class MainActivity : AppCompatActivity() {
@@ -19,9 +20,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val listView = findViewById<ListView>(R.id.main_listview)
+        setUpListView()
+
+
+
+    }
+
+    fun setUpListView(){
+        val listView = findViewById<ListView>(R.id.myListView)
         listView.adapter = MyCustomAdapter()
     }
+
+
 
         private class MyCustomAdapter: BaseAdapter(){
 
@@ -46,7 +56,7 @@ class MainActivity : AppCompatActivity() {
             if (convertView == null ){
                 val layoutInflater = LayoutInflater.from(viewGroup!!.context)
                 rowMain = layoutInflater.inflate(R.layout.row_main, viewGroup, false)
-                val viewHolder = ViewHolder(rowMain.nametextView,rowMain.position_textView)
+                val viewHolder = ViewHolder(rowMain.textLabel)
                 rowMain.tag = viewHolder
             }
             else{
@@ -55,11 +65,11 @@ class MainActivity : AppCompatActivity() {
 
             val viewHolder = rowMain.tag as ViewHolder
             viewHolder.nameTextView.text =  androidVersionsArray.get(position)
-            viewHolder.positionTextView.text =  androidVersionsArray.get(position)
+           // viewHolder.positionTextView.text =  androidVersionsArray.get(position)
             return  rowMain
         }
 
-        private class ViewHolder(val nameTextView: TextView, val positionTextView: TextView)
+        private class ViewHolder(val nameTextView: TextView)
 
     }
 }
