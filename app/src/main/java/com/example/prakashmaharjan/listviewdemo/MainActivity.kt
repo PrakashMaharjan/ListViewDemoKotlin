@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         private class MyCustomAdapter: BaseAdapter(){
 
         private val androidVersionsArray = arrayListOf<String>(
-                "Android 1.0", "Petit Four", "Cupcake", "Donut", "Eclair", "Froyo", "Gingerbread", "Honeycomb", "Ice Cream Sandwich", "Jelly Bean", "Kitkat", "Lollipop","Marshmallow", "Nougat", "Oreo", "Pie"
+                "Android 1.0", "Petit Four", "Cupcake", "Donut", "Eclair", "Froyo", "Gingerbread", "Honeycomb", "Ice Cream Sandwich", "Jelly Bean", "Kitkat", "Lollipop","Marshmallow", "Nougat", "Oreo", "Pie", "Android 10", "Android 11"
         )
 
         override fun getCount(): Int {
