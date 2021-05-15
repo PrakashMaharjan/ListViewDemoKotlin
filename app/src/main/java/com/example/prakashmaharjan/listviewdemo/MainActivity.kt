@@ -34,10 +34,10 @@ class MainActivity : AppCompatActivity() {
     private class MyCustomAdapter : BaseAdapter() {
 
         private val androidVersionsArray = arrayListOf<String>(
-                "Android 1.0", "Android 1.1 (Petit Four)", "Android 1.5 (Cupcake)", "Android 1.6 (Donut)", "Android 2.0 (Eclair)", "Android 2.2 (Froyo)", "Android 2.3 (Gingerbread)", "Android 3.0 (Honeycomb)", "Android 4.0 (Ice Cream Sandwich)", "Android 4.1 (Jelly Bean)", "Android 4.4 (Kitkat)", "Android 5.0 (Lollipop)", "Android 6.0 (Marshmallow)", "Android 7.0 (Nougat)", "Android 8.0 (Oreo)", "Android 9.0 (Pie)", "Android 10", "Android 11"
+                "Android 1.0", "Android 1.1 (Petit Four)", "Android 1.5 (Cupcake)", "Android 1.6 (Donut)", "Android 2.0 (Eclair)", "Android 2.2 (Froyo)", "Android 2.3 (Gingerbread)", "Android 3.0 (Honeycomb)", "Android 4.0 (Ice Cream Sandwich)", "Android 4.1 (Jelly Bean)", "Android 4.4 (Kitkat)", "Android 5.0 (Lollipop)", "Android 6.0 (Marshmallow)", "Android 7.0 (Nougat)", "Android 8.0 (Oreo)", "Android 9.0 (Pie)", "Android 10", "Android 11", "Android 12"
         )
         private val androidAPILevelsArray = arrayListOf<String>(
-                "API 1", "API 2", "API 3", "API 4", "API 5", "API 8", "API 9", "API 11", "API 14", "API 16", "API 19", "API 21", "API 23", "API 24", "API 26", "API 28", "API 29", "API 30"
+                "API 1", "API 2", "API 3", "API 4", "API 5", "API 8", "API 9", "API 11", "API 14", "API 16", "API 19", "API 21", "API 23", "API 24", "API 26", "API 28", "API 29", "API 30", "API 31"
         )
 
         override fun getCount(): Int {
